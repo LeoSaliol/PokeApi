@@ -1,0 +1,141 @@
+:root{
+    --darkCyan: hsl(185, 75%, 39%);
+    --veryDarkDesaturatedBlue: rgb(45, 50, 72);
+    --darkGrayishBlue: hsl(227, 10%, 46%);
+    --darkGray: hsl(0, 0%, 59%);
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+body{
+    
+    background-image: url(/images/df4e8ba28f912bf9cdf9fa0dfc196411.png);
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    height: 100vh;
+    
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+    /* margin-top: -1.9rem; */
+    
+    
+}
+
+.cardBody:hover{
+    transform: scale(1.14);
+}
+
+
+
+.headerCard{
+    display: block;
+    
+}
+.cardBody{
+    transition: all 400ms;
+    border: 0.5px solid var(--darkGray);
+    border-radius: 4%;
+    overflow: hidden;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.564);
+    padding: 1rem 3.5rem;
+    border-color: #27aafbd8;
+    width: 21rem;
+    margin-top: -100px;
+    
+    /* box-shadow: 0px 2px 39px -2px rgba(45,50,72,0.75);
+-webkit-box-shadow: 0px 2px 39px -2px rgba(45,50,72,0.75);
+-moz-box-shadow: 0px 2px 39px -2px rgba(45,50,72,0.75); */
+}
+
+.img{
+    width: 200px;
+    height: 200px;
+}
+
+.title{
+    margin: .75rem 0 ;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.titleType{
+    padding-top: 0.5rem;
+    font-size: 14px;
+}
+
+.footer{
+    border-top: 1px solid hsl(0, 0%, 78%);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    
+    display: flex;
+    justify-content: space-between;
+    /* margin-left: -20px; */
+}
+.numTitle{
+    font-size: 18px;
+    padding-bottom: 0.15rem;
+}
+
+.subtitle{
+    font-size: 12px;
+}
+
+p{
+    color: var(--darkGray);
+}
+.btns{
+    width: 21rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.btn{
+    margin-top: 3rem;
+    padding: 0.60rem;
+    width: 5rem;
+}
+
+
+#search{
+    width: 21rem;
+    height: 45px;
+    /* border-style: none; */
+    border: 1.5px solid black;
+    border-radius: 6px;
+    background-color: transparent;
+    color: black;
+    padding: 0.75rem;
+    font-weight: bold;
+    
+}
+
+#search:focus{
+    background-color: hsl(202, 84%, 68%);
+    box-shadow: 0px 2px 39px -2px hwb(202 22% 5%);
+    
+    
+}
+#search::placeholder{
+    color: #524c4c8d;
+}
+.container{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding-top: 50px; */
+}
