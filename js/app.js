@@ -3,7 +3,7 @@
 const form = document.querySelector('form');
 const search = document.getElementById('search')
 
-const main = document.getElementById('main')
+const section = document.querySelector('.sectionCard')
 
 
 
@@ -98,7 +98,7 @@ const fechData = async (nombre) => {
         </div >
     </section>
         `;
-        main.innerHTML = pokeContent;
+        section.innerHTML = pokeContent;
 
     
     }
